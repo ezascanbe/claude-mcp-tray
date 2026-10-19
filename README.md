@@ -1,5 +1,14 @@
 # Claude MCP Tray
 
+![100% vibe coded](https://img.shields.io/badge/vibe%20coded-100%25-D97757?style=for-the-badge)
+
+> **100% vibe coded.** Not a single line of this was typed by a human. I described what I wanted, Claude wrote it.
+
+I cannot be the only person who's annoyed every time an MCP connector fails to load. You get the toast,
+you open settings, you hunt through JSON, you comment something out, you quit Claude, you relaunch it… and
+then you do it all again in reverse. This puts every MCP server and extension one click away in your tray,
+with a toggle and a restart button.
+
 A small tray / menu-bar app (Rust + Tauri v2) to switch Claude Desktop's MCP servers and
 Desktop Extensions on and off.
 
