@@ -1,0 +1,34 @@
+﻿[package]
+name = "claude-mcp-tray"
+version = "0.1.0"
+edition = "2021"
+description = "Tray utility to toggle MCP servers in Claude Desktop"
+license = "MIT"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon", "image-png", "macos-private-api"] }
+tauri-plugin-single-instance = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+dirs = "5"
+sysinfo = "0.32"
+anyhow = "1"
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.52"
+
+# Only for `cargo run --example make_icons`
+[dev-dependencies]
+resvg = "0.45"
+ico = "0.4"
+icns = "0.3"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true
