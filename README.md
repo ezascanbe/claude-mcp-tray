@@ -4,8 +4,8 @@
 
 > **100% vibe coded.** Not a single line of this was typed by a human. I described what I wanted, Claude wrote it.
 
-I cannot be the only person who's annoyed every time an MCP connector fails to load. You get the toast,
-you open settings, you hunt through JSON, you comment something out, you quit Claude, you relaunch it… and
+I cannot be the only person who's annoyed every time an MCP connector fails to load.
+You open settings, you hunt through JSON, you comment something out, you quit Claude, you relaunch it… and
 then you do it all again in reverse. This puts every MCP server and extension one click away in your tray,
 with a toggle and a restart button.
 
